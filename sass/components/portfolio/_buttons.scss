@@ -1,0 +1,68 @@
+.buttons {
+  padding-bottom: 94px;
+}
+
+.button--nav {
+  display: flex;
+
+  padding-top: 94px;
+  padding-bottom: 50px;
+  border: transparent;
+  margin: 0;
+
+  &:first-child {
+    margin: 0;
+  }
+
+  @media (min-width: 480px) {
+    & {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      justify-content: center;
+    }
+  }
+
+  &__li {
+    @media (max-width: 767px) {
+      &:nth-child(n + 4) {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.button--nav__style {
+  color: var(--main-color-title);
+  background-color: var(--team-bcg);
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  font-family: 'Roboto', sans-serif;
+
+  border: transparent;
+  margin-left: 8px;
+  border-radius: 4px;
+  padding: 6px 22px;
+
+  display: flex;
+  align-items: center;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--white-color-header);
+    background-color: var(--hover-focus);
+
+    border: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color var(--time) var(--cubic) background-color var(--time)
+      var(--cubic);
+  }
+}

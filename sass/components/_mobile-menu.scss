@@ -1,0 +1,126 @@
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  color: var(--main-color-title);
+  background-color: var(--white-color-header);
+  transform: translateX(100%);
+  transition: transform var(--time) var(--cubic);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  z-index: 1;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  &--nav__li {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+
+    &:not(:first-child) {
+      padding-top: 32px;
+    }
+  }
+
+  &--auth__tel {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--hover-focus);
+  }
+
+  &--auth__mail {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--main-color-text);
+    padding-top: 32px;
+  }
+
+  &--auth__ul {
+    padding-top: 320px;
+  }
+
+  &--social__ul {
+    display: flex;
+    padding-top: 64px;
+  }
+
+  &--social__li {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    color: var(--hover-focus);
+
+    &:not(:first-child) {
+      padding-left: 20px;
+    }
+  }
+
+  &--social__li:not(:first-child)::before {
+    content: '';
+    // display: block;
+    width: 22px;
+    height: 1px;
+    margin-right: 10px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
+
+  &--svg {
+    width: 24px;
+    height: 16px;
+  }
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media (min-width: 768px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  color: #fff;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.current {
+  color: var(--hover-focus);
+}

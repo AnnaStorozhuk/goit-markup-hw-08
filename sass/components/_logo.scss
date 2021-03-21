@@ -1,0 +1,22 @@
+.logo {
+  color: #000000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.92;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+
+  &--word {
+    color: var(--hover-focus);
+  }
+
+  &--basement {
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.16;
+    text-decoration: none;
+  }
+}

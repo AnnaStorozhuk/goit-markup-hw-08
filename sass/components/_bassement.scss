@@ -1,0 +1,246 @@
+.basement {
+  background-color: var(--main-color-footer);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  &--box__info {
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    margin-top: 9px;
+  }
+  &--box__address {
+    color: var(--white-color-header);
+    font-size: 14px;
+    line-height: 1.71;
+    font-style: normal;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+  }
+
+  &--box {
+    @media (max-width: 1199px) {
+      & {
+        text-align: center;
+      }
+    }
+    @media (min-width: 1200px) {
+      & {
+        padding-right: 70px;
+      }
+    }
+  }
+
+  &--box__par {
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  &--box__nav {
+    padding: 0;
+    margin: 0;
+    margin-top: 9px;
+
+    @media (min-width: 480px) {
+      & {
+        padding-left: 0;
+      }
+    }
+    // @media (min-width: 1200px) {
+    // }
+  }
+
+  &--box__flex {
+    @media (min-width: 768px) {
+      & {
+        display: flex;
+        justify-content: space-around;
+      }
+    }
+  }
+}
+
+.basement--icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+
+  @media (max-width: 1199px) {
+    & {
+      text-align: center;
+    }
+  }
+}
+
+.bassement--icons__title {
+  color: var(--white-color-header);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 20px;
+  padding-top: 20px;
+
+  @media (max-width: 1199px) {
+    &,
+    &1 {
+      text-align: center;
+      padding-top: 60px;
+    }
+  }
+  @media (min-width: 768px) {
+    &1 {
+      padding-top: 5px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & {
+      padding-top: 5px;
+    }
+  }
+}
+
+.basement--icons__svg {
+  fill: var(--white-color-header);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basement--icons__svg {
+  fill: var(--white-color-header);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bassement--icons__input {
+  background-color: var(--main-color-footer);
+  height: 50px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  padding-left: 17px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  line-height: 1.25;
+
+  @media (min-width: 480px) {
+    & {
+      width: 450px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & {
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    & {
+      width: 358px;
+    }
+  }
+}
+
+.bassement--icons__btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  margin-left: 12px;
+  height: 50px;
+
+  color: var(--white-color-header);
+  background-color: var(--hover-focus);
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 28px;
+  padding-left: 29px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+
+  letter-spacing: 0.06em;
+
+  @media (max-width: 1199px) {
+    & {
+      display: block;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+}
+
+.bassement--icons__send {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.bassement--icons__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  fill: var(--main-icon-color);
+}
+
+.bassement--icons__svg:not(:first-child) {
+  margin-left: 10px;
+}
+
+.bassement--icons__icon:hover,
+.bassement--icons__icon:focus {
+  background-color: var(--hover-focus);
+  fill: var(--white-color-header);
+  outline: none;
+  transition: background-color var(--time) var(--cubic);
+}
+
+@media (min-width: 1200px) {
+  .basement__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .bassement--icons__form {
+    width: 570px;
+    display: flex;
+  }
+}
+
+.bassement--icons__icon {
+  background-color: var(--bcg-icon-footer);
+}
+
+// .bassement--icons {
+//   margin-left: 93px;
+// }

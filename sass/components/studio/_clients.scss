@@ -1,0 +1,129 @@
+.clients--container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    padding-top: 30px;
+    padding-left: 0;
+    margin: 0;
+
+    @media (min-width: 480px) {
+      // padding-bottom: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: calc(-1 * 30px);
+      // margin-bottom: calc(-1 * 30px);
+    }
+
+    @media (min-width: 768px) {
+      & {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: calc(-1 * 60px);
+        // margin-bottom: calc(-1 * 30px);
+      }
+    }
+
+    @media (min-width: 1200px) {
+      & {
+        display: flex;
+
+        align-items: center;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  &__li {
+    @media (min-width: 480px) {
+      & {
+        width: 210px;
+        flex-basis: calc((100%-30px) / 2);
+        padding-bottom: 30px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      padding-bottom: 30px;
+      flex-basis: calc((100%-60px) / 3);
+    }
+    @media (min-width: 1200px) {
+      & {
+        flex-basis: 0;
+      }
+      &:not(:first-child) {
+        padding-left: 30px;
+      }
+    }
+  }
+
+  &__clients1 {
+    width: 44.27px;
+    height: 49.23px;
+  }
+
+  &__clients2 {
+    width: 40px;
+    height: 52px;
+  }
+
+  &__clients3 {
+    width: 41px;
+    height: 42.6px;
+  }
+
+  &__clients4 {
+    width: 79.66px;
+    height: 42.02px;
+  }
+
+  &__clients5 {
+    width: 59px;
+    height: 47px;
+  }
+
+  &__clients6 {
+    width: 88.48px;
+    height: 45.44px;
+  }
+}
+
+.clients--container__box {
+  // width: 170px;
+  height: 90px;
+  border: 1px solid var(--main-icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: var(--main-icon-color);
+
+  @media (min-width: 480px) {
+    width: 210px;
+  }
+
+  @media (min-width: 768px) {
+    & {
+      width: 226px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    width: 170px;
+  }
+
+  &:focus,
+  &:hover {
+    border-color: var(--hover-focus);
+    fill: var(--hover-focus);
+    outline: none;
+
+    transition: border-color var(--time) var(--cubic);
+  }
+}
