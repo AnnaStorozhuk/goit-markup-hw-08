@@ -2006,6 +2006,7 @@ a {
   transition: -webkit-transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic);
   transition: transform var(--time) var(--cubic), -webkit-transform var(--time) var(--cubic);
+  overflow-y: scroll;
 }
 
 .mobile-menu {

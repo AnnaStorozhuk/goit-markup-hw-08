@@ -9,6 +9,7 @@
   background-color: var(--white-color-header);
   transform: translateX(110%);
   transition: transform var(--time) var(--cubic);
+  overflow-y: scroll;
 }
 
 .mobile-menu {
