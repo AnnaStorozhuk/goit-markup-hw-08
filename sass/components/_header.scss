@@ -44,16 +44,16 @@
 }
 
 .header--nav {
-  display: flex;
+  display: none;
 
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-right: 0;
-  padding: 0;
-
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
     & {
-      display: none;
+      display: flex;
+
+      margin-top: 0;
+      margin-bottom: 0;
+      margin-right: 0;
+      padding: 0;
     }
   }
   @media (min-width: 768px) {

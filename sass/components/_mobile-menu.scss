@@ -7,7 +7,7 @@
   padding: 48px 40px;
   color: var(--main-color-title);
   background-color: var(--white-color-header);
-  transform: translateX(100%);
+  transform: translateX(110%);
   transition: transform var(--time) var(--cubic);
 }
 
@@ -17,7 +17,7 @@
   list-style: none;
   z-index: 1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 767px) {
     display: none;
   }
 
@@ -102,6 +102,14 @@
   border: none;
   border-radius: 50%;
   outline: none;
+
+  fill: var(--main-color-title);
+
+  &:hover,
+  &:focus {
+    fill: var(--hover-focus);
+    transition: fill var(--time) var(--cubic);
+  }
 
   @media (min-width: 768px) {
     & {

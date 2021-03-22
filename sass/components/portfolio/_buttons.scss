@@ -1,12 +1,11 @@
 .buttons {
-  padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 
 .button--nav {
   display: flex;
 
-  padding-top: 94px;
-  padding-bottom: 50px;
   border: transparent;
   margin: 0;
 
@@ -62,7 +61,7 @@
     border: transparent;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: color var(--time) var(--cubic) background-color var(--time)
-      var(--cubic);
+    transition: color var(--time) var(--cubic),
+      background-color var(--time) var(--cubic);
   }
 }
