@@ -16,7 +16,6 @@
  
     <header class="header">
         
-        <!-- <div> -->
       <div class="container header--container">
         <nav class="header--nav__flex">
             <a href="./index.html" class="logo"><span class="logo--word"> Web</span>Studio</a>
@@ -56,56 +55,59 @@
                     +38 096 111 11 11</a>
             </li>
         </ul>
-      </div>
 
-      <div>
-          <button class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu">
-              <svg class="mobile-menu--svg">
-                  <use href="./images/svg/sprint.svg#open-mobile"></use>
-              </svg>
-          </button>
+        <div class="mobile-menu--toggle">
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="mobile-menu--svg1">
+                    <use href="./images/svg/sprint.svg#open-mobile"></use>
+                </svg>
+            </button>
+        </div>
+        
+        
+        <div class="mobile-menu ">
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="mobile-menu--svg2">
+                        <use href="./images/svg/sprint.svg#close-mobile"></use>
+                    </svg>
+                </button>
+        
+                <ul class="mobile-menu--nav__ul">
+                    <li class="mobile-menu--nav__li current">
+                        <a href="./index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu--nav__li">
+                        <a href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="mobile-menu--nav__li">
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+        
+                <div class="mobile-menu__fixed">
+                    <ul class="mobile-menu--auth__ul">
+                        <li class="mobile-menu--auth__tel"> <a class="mobile-menu--auth__a" href="tel:+380961111111">+38 096 111 11
+                                11</a>
+                        </li>
+                        <li class="mobile-menu--auth__mail "><a class="mobile-menu--auth__a"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    </ul>
+                    <ul class="mobile-menu--social__ul">
+                        <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Instagram</a></li>
+                        <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Twitter</a></li>
+                        <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Facebook</a></li>
+                        <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">LinkedIn</a></li>
+                    
+                    </ul>
+                </div>
+            </div>
+        
+        
+        </div>
       </div>
 
       
-      <div class="mobile-menu ">
-        <div class="menu-container js-menu-container" id="mobile-menu">
-            <button class="menu-toggle js-close-menu">
-                <svg class="mobile-menu--svg">
-                    <use  href="./images/svg/sprint.svg#close-mobile"></use>
-                </svg>
-            </button>
-
-            <ul class="mobile-menu--nav__ul">
-                <li class="mobile-menu--nav__li current">
-                     <a   href="./index.html">Студия</a> 
-                    </li>
-                <li  class="mobile-menu--nav__li">   
-                    <a href="./portfolio.html">Портфолио</a> 
-                </li>
-                <li class="mobile-menu--nav__li"> 
-                    <a   href="#">Контакты</a>
-                 </li>
-            </ul>
-            
-            <ul class="mobile-menu--auth__ul">
-                <li class="mobile-menu--auth__tel"> <a class="mobile-menu--auth__a" href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-                <li class="mobile-menu--auth__mail "><a class="mobile-menu--auth__a"
-                        href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            </ul>
-            <ul class="mobile-menu--social__ul">
-                <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Instagram</a></li>
-                <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Twitter</a></li>
-                <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">Facebook</a></li>
-                <li class="mobile-menu--social__li"><a class="mobile-menu--social__a" href="#">LinkedIn</a></li>
-            
-            </ul>
-        </div>
-          
-
-      </div>
 
     </header>
 

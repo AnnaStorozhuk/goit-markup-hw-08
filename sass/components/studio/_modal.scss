@@ -33,6 +33,11 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--time) var(--cubic);
+  @media (max-width: 1199px) {
+    & {
+      overflow-y: scroll;
+    }
+  }
 
   &__label {
     color: var(--main-color-text);
