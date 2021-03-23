@@ -1346,6 +1346,26 @@ a {
   height: 20px;
 }
 
+@media (min-width: 480px) {
+  .team-container__img {
+    height: 460px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team-container__img {
+    height: 374px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-container__img {
+    height: 254px;
+    width: 100%;
+  }
+}
+
 .clients--container {
   padding-top: 30px;
   padding-bottom: 30px;
